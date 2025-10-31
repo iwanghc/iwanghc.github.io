@@ -27,7 +27,7 @@
 <meta property="og:description" content="关于索引优化建议的一些总结，持续维护中，不一定百分百有效，但是基本上都合理">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-10-31T10:11:03.000Z">
-<meta property="article:modified_time" content="2025-10-31T10:14:47.628Z">
+<meta property="article:modified_time" content="2025-10-31T10:20:57.341Z">
 <meta property="article:author" content="WangHucheng">
 <meta property="article:tag" content="MySQL">
 <meta property="article:tag" content="索引">
@@ -307,7 +307,6 @@
                 
                 <p>关于索引优化建议的一些总结，持续维护中，不一定百分百有效，但是基本上都合理</p>
 <span id="more"></span>
-
 <h2 id="关于索引建议"><a href="#关于索引建议" class="headerlink" title="关于索引建议"></a>关于索引建议</h2><ol>
 <li>索引并不是越多越好，索引过多会给dml带来负担，一张表中的索引不超过5个</li>
 <li>通常索引字段顺序为谓词列（加速检索）-&gt;排序&#x2F;分组列（消除临时表和文件排序）-&gt;关联列（消除块嵌套循环）-&gt;select列（覆盖索引时使用）<ul>
@@ -345,12 +344,12 @@
     
       <span class="category-chain">
         
-  <a href="/categories/SQL%E8%B0%83%E4%BC%98/" class="category-chain-item">SQL调优</a>
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="category-chain-item">数据库</a>
   
   
     <span>></span>
     
-  <a href="/categories/SQL%E8%B0%83%E4%BC%98/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="category-chain-item">数据库</a>
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL%E8%B0%83%E4%BC%98/" class="category-chain-item">SQL调优</a>
   
   
 
