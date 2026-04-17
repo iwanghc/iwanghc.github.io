@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>linux安装miniconda及使用</title>
+    <link href="/2026/04/16/installing-and-using-miniconda-on-linux/"/>
+    <url>/2026/04/16/installing-and-using-miniconda-on-linux/</url>
+    
+    <content type="html"><![CDATA[<p>[Python] linux安装miniconda及使用</p><span id="more"></span><h3 id="1-下载安装包："><a href="#1-下载安装包：" class="headerlink" title="1. 下载安装包："></a>1. 下载安装包：</h3><p>ARM: <code>wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-aarch64.sh</code><br>X86: <code>wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh</code></p><h3 id="2-执行安装："><a href="#2-执行安装：" class="headerlink" title="2. 执行安装："></a>2. 执行安装：</h3><p><code>bash Miniconda3-latest-Linux-aarch64.sh</code></p><h3 id="3-安装配置"><a href="#3-安装配置" class="headerlink" title="3. 安装配置"></a>3. 安装配置</h3><p>阅读许可协议：一直按 Enter 键阅读许可协议。<br>同意条款：在提示是否接受许可条款时，输入 yes。<br>确认安装路径：默认安装路径通常是 ~&#x2F;miniconda3，直接按 Enter 确认，或输入自定义路径。<br>初始化Condo：提示是否运行 conda init 以自动初始化时，输入 yes。这会将conda添加到 .bashrc 中。</p><h3 id="4-激活安装"><a href="#4-激活安装" class="headerlink" title="4. 激活安装"></a>4. 激活安装</h3><p>安装完成后，为了使环境生效，请关闭当前终端并重新打开，或者执行以下命令：<br><code>source ~/.bashrc</code></p><h3 id="5-验证安装"><a href="#5-验证安装" class="headerlink" title="5. 验证安装"></a>5. 验证安装</h3><p>执行以下命令检查conda是否安装成功：<br><code>conda --version</code></p><h3 id="6-配置镜像源（可选）"><a href="#6-配置镜像源（可选）" class="headerlink" title="6. 配置镜像源（可选）"></a>6. 配置镜像源（可选）</h3><p>为提高国内访问速度，建议配置清华大学镜像源：<br> <code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</code><br> <code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</code><br> <code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</code><br> <code>conda config --set show_channel_urls yes</code></p><h3 id="7-conda使用："><a href="#7-conda使用：" class="headerlink" title="7.conda使用："></a>7.conda使用：</h3><h4 id="conda创建环境："><a href="#conda创建环境：" class="headerlink" title="conda创建环境："></a>conda创建环境：</h4><p><code>conda create -n 环境名称 python=3.9</code></p><h4 id="在指定路径下创建环境"><a href="#在指定路径下创建环境" class="headerlink" title="在指定路径下创建环境:"></a>在指定路径下创建环境:</h4><p><code>conda create --prefix=路径/环境名称 python=3.9</code></p><h4 id="激活环境："><a href="#激活环境：" class="headerlink" title="激活环境："></a>激活环境：</h4><p><code>conda activate 环境名称</code></p><h4 id="查看所有已存在环境："><a href="#查看所有已存在环境：" class="headerlink" title="查看所有已存在环境："></a>查看所有已存在环境：</h4><p><code>conda env list </code> 或者 <code>conda info -e </code></p><h4 id="退出当前环境："><a href="#退出当前环境：" class="headerlink" title="退出当前环境："></a>退出当前环境：</h4><p><code>conda deactivate</code></p><h4 id="删除特定环境："><a href="#删除特定环境：" class="headerlink" title="删除特定环境："></a>删除特定环境：</h4><p><code>conda remove -n 环境名称 --all</code></p><h4 id="删除指定路径下的环境："><a href="#删除指定路径下的环境：" class="headerlink" title="删除指定路径下的环境："></a>删除指定路径下的环境：</h4><p><code>conda remove --prefix=路径/环境名称 --all</code></p><h4 id="复制环境，基于已有环境创建新环境："><a href="#复制环境，基于已有环境创建新环境：" class="headerlink" title="复制环境，基于已有环境创建新环境："></a>复制环境，基于已有环境创建新环境：</h4><p><code>conda create -n 新环境名称 --clone 旧环境名称</code></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Python</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>索引优化建议</title>
     <link href="/2025/10/31/index-optimization/"/>
     <url>/2025/10/31/index-optimization/</url>
@@ -51,11 +76,11 @@
     
     <tags>
       
+      <tag>Python</tag>
+      
       <tag>LLM</tag>
       
       <tag>MCP</tag>
-      
-      <tag>Python</tag>
       
     </tags>
     
